@@ -41,7 +41,7 @@ jsonpChartCallback = (data) ->
   parseData(data)
   drawVisualization()
   $("#loader").hide()
-  $("#chart").show()
+  $("#chart").show '100'
 
 parseData = (data) ->
   parsedGraphData.push [ "x", "Silver Price" ]

@@ -50,7 +50,7 @@ jsonpChartCallback = function(data) {
   parseData(data);
   drawVisualization();
   $("#loader").hide();
-  return $("#chart").show();
+  return $("#chart").show('100');
 };
 
 parseData = function(data) {
