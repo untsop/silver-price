@@ -1,0 +1,183 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 13px;
+  color: #fff;
+  line-height: 20px;
+  text-shadow: 0 0 1px rgba(16, 31, 61, 0.25);
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+  background: #666666 no-repeat center 0;
+}
+a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  margin-bottom: 125px;
+}
+header #current.show {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+header #current {
+  font-size: 35px;
+  font-weight: bold;
+  float: right;
+  margin-top: 6px;
+  color: #999;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+header #current .value {
+  float: left;
+}
+header #current .value span {
+  margin-left: 5px;
+  color: #fff;
+}
+header #current .change {
+  position: relative;
+  background: url("../img/arrows.png") no-repeat 0 -12px;
+  top: -6px;
+  margin-left: 25px;
+  float: left;
+  line-height: 16px;
+  color: #fff;
+  min-width: 70px;
+  font-size: 13px;
+}
+header #current .change em {
+  font-style: normal;
+  color: #999;
+}
+header #current .change span {
+  display: block;
+  padding-left: 30px;
+}
+header #current .change.down {
+  background-position: 0 -51px;
+}
+header #current.error {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+header h1 {
+  width: 334px;
+  height: 32px;
+  background: url("../img/h1.png") no-repeat;
+  text-indent: -9999px;
+  float: left;
+  margin: 0;
+}
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+  padding: 100px 0 0 0;
+}
+#graph {
+  left: 0;
+  top: 0;
+}
+#graph #chart {
+  width: 700px;
+  height: 200px;
+  margin-bottom: 100px;
+  margin-left: -20px;
+}
+#graph #social {
+  float: right;
+  height: 20px;
+  position: relative;
+  z-index: 1000;
+}
+#graph #social .twitter {
+  margin-left: 10px;
+  width: 56px;
+}
+#graph h2 {
+  color: #999;
+  float: left;
+  font-size: 13px;
+}
+#loader {
+  padding: 100px 0;
+  margin-bottom: 100px;
+}
+#loader-wrapper {
+  width: 8px;
+  text-align: center;
+  margin: 0 auto;
+}
+@-webkit-keyframes ajax-loader-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes ajax-loader-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ajax-loader-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ajax-loader {
+  opacity: .8;
+  display: block;
+  border-radius: 50%;
+  font-size: 29px;
+  width: .25em;
+  height: .25em;
+  box-shadow: 0 -0.4em 0 0 #ffffff, -0.28em -0.28em 0 0 rgba(255, 255, 255, 0.75), -0.4em 0 0 0 rgba(255, 255, 255, 0.5), -0.28em 0.28em 0 0 rgba(255, 255, 255, 0.25);
+  -webkit-animation: 0.85s ajax-loader-rotate steps(8) infinite;
+  -moz-animation: 0.85s ajax-loader-rotate steps(8) infinite;
+  animation: 0.85s ajax-loader-rotate steps(8) infinite;
+}
+footer {
+  padding-bottom: 70px;
+  color: #999;
+}
+footer .open-source {
+  float: left;
+}
+footer .origin {
+  font-size: 11px;
+}
+footer .origin a {
+  color: #ccc;
+}
+footer .copy {
+  text-align: right;
+  float: right;
+}
+footer p {
+  margin: 0;
+}
+footer .quote {
+  font-size: 11px;
+}
