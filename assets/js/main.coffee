@@ -15,7 +15,6 @@ jQuery ($) ->
       else
         $(".change").addClass("down")
         $(".change").removeClass("up")
-        change = '-'+change
 
     $("#changeStock").html change
     $("#changePercent").html "#{changePercent}"

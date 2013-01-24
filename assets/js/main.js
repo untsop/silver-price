@@ -20,7 +20,6 @@ jQuery(function($) {
       } else {
         $(".change").addClass("down");
         $(".change").removeClass("up");
-        change = '-' + change;
       }
     }
     $("#changeStock").html(change);
